@@ -1,0 +1,27 @@
+{
+  "name": "image-dimensions",
+  "description": "Get the dimensions of a file input",
+  "version": "0.0.0",
+  "author": "Jonathan Ong <me@jongleberry.com> (http://jongleberry.com)",
+  "license": "MIT",
+  "repository": "mgmtio/image-dimensions",
+  "devDependencies": {
+    "istanbul": "0",
+    "mocha": "2",
+    "standardberry": "*"
+  },
+  "scripts": {
+    "lint": "standardberry index.js",
+    "test": "mocha",
+    "test-cov": "istanbul cover node_modules/mocha/bin/_mocha -- --reporter dot",
+    "test-ci": "npm run lint && istanbul cover node_modules/mocha/bin/_mocha --report lcovonly -- --reporter dot"
+  },
+  "keywords": [
+    "image",
+    "dimensions",
+    "browser"
+  ],
+  "files": [
+    "index.js"
+  ]
+}
